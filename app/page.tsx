@@ -27,6 +27,57 @@ export default function Home() {
             Restaurant Name (Toronto)
           </h1>
         </header>
+        <article className="flex m-auto w-2/3 justify-between items-start -mt-12 relative">
+          <div className="bg-white w-[70%] rounded p-3 shadow-lg h-72">
+            <nav className="flex justify-start border-b-2 border-gray-200 gap-6 pb-3 ">
+              <a
+                href=""
+                className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
+              >
+                Overview
+              </a>
+              <a
+                href=""
+                className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
+              >
+                Photo
+              </a>
+              <a
+                href=""
+                className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
+              >
+                Menu
+              </a>
+              <a
+                href=""
+                className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
+              >
+                Reviews
+              </a>
+            </nav>
+            <h1 className="text-4xlg font-bold py-5">
+              Restaurant Name Here...
+            </h1>
+            <div className="flex justify-start gap-6">
+              <div className="rate flex gap-2">
+                <span>*****</span>
+                <span>4.5</span>
+              </div>
+              <div className="reviews flex gap-2">
+                <span>icon</span>
+                <span>6 reviews</span>
+              </div>
+            </div>
+            <div className="pt-3">
+              <p>
+                Nomi provides an exclusive and intimate dining experience of the
+                highest caliber, using only the finest ingredients. Nomi
+                provides an exclusive and intimate dining experience of the
+                highest caliber, using only the finest ingredients.
+              </p>
+            </div>
+          </div>
+        </article>
       </main>
     </main>
   );
