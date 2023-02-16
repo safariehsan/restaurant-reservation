@@ -20,11 +20,20 @@ export default function Home() {
         </nav>
         {/* NAVBAR */}
         {/* HEADER */}
-        <header className="h-64 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] flex text-center flex-col justify-center items-center">
-          <h1 className="text-4xlg text-white font-bold mb-4">
+        <header className="h-72 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] flex text-center flex-col justify-center items-center">
+          <h1 className="text-3xlg text-white font-bold mb-4">
             Find your table for any occasion
           </h1>
-          <button className="bg-gray-100 rounded px-2 py-1">Reserve</button>
+          <div className="flex flex-row">
+            <input
+              className="text-left p-2 w-[350px] flex justify-center rounded mr-2"
+              type="text"
+              placeholder="City, State, ..."
+            />
+            <button className="bg-red-600 text-white rounded px-3 py-1 text-lg font-semibold">
+              Search
+            </button>
+          </div>
         </header>
         {/* HEADER */}
       </main>
