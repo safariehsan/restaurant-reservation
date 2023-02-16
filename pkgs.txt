@@ -1,0 +1,2 @@
+npx create-next-app@13.1.1 --experimental-app .
+npm install -D tailwindcss@3.2.4 postcss@8.4.20 autoprefixer@10.4.13
