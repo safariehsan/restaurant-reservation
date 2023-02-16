@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="bg-gray-100 min-h-screen w-screen">
-      <main className="m-auto bg-white max-w-screen-xlg">
+    <main className="bg-gray-200 min-h-screen w-screen">
+      <main className="m-auto bg-white max-w-screen-2xlg">
         {/* NAVBAR */}
         <nav className="bg-white p-2 flex justify-between">
           <a href="" className="font-bold text-gray-700 text-2xl">
@@ -36,6 +36,27 @@ export default function Home() {
           </div>
         </header>
         {/* HEADER */}
+
+        {/* CARDS */}
+        <div className="py-3 px-36 mt-10 flex flex-wrap">
+          <div className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500">
+            <img src="./photo.jpg" alt="" className="w-full h-36" />
+            <div className="p-3">
+              <h3 className="font-semibold text-2xl mb-2">Animar</h3>
+              <div className="flex items-start">
+                <div className="">*****</div>
+                <p className="pl-4">75 reviews</p>
+              </div>
+              <div className="flex text-base font-light mr-3 capitalize">
+                <p className="mr-3">Mexican</p>
+                <p className="mr-3">$$$$</p>
+                <p>Toronto</p>
+              </div>
+              <p className="text-sm mt-1 font-bold">Booked 3 times today</p>
+            </div>
+          </div>
+        </div>
+        {/* CARDS */}
       </main>
     </main>
   );
