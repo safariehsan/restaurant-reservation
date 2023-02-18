@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const RestaurantDetail = () => {
@@ -32,24 +33,22 @@ const RestaurantDetail = () => {
       <div className="flex mx-auto flex-row relative -mt-12 container gap-3 px-20">
         <article className="basis-2/3 justify-between items-start bg-white rounded p-3 shadow-lg">
           <nav className="flex justify-start border-b-2 border-gray-200 gap-6 pb-3 ">
-            <a
-              href=""
-              className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
-            >
-              Overview
-            </a>
+            <Link href="/restaurant/test">
+              <span className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold">
+                Overview
+              </span>
+            </Link>
             <a
               href=""
               className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
             >
               Photo
             </a>
-            <a
-              href=""
-              className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
-            >
-              Menu
-            </a>
+            <Link href="/restaurant/test/menu">
+              <span className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold">
+                Menu
+              </span>
+            </Link>
             <a
               href=""
               className="text-base text-gray-500 hover:text-gray-900 transition-all duration-500 font-semibold"
@@ -100,10 +99,7 @@ const RestaurantDetail = () => {
             </a>
           </nav>
           <div className="grid grid-rows-2 grid-flow-col gap-2 mt-3">
-            <img
-              src="../../../public/img1.png"
-              className="rounded row-span-2 col-span-3"
-            />
+            <img src="./img1.png" className="rounded row-span-2 col-span-3" />
             <img src="./img2.png" className="rounded col-span-2" />
             <img src="./img3.png" className="rounded col-span-2" />
             <img src="./img4.png" className="rounded col-span-2" />
