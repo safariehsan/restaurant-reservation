@@ -1,3 +1,64 @@
 export default function Home() {
-  return <main></main>;
+  return <main className="bg-gray-200 min-h-screen w-full">
+  {/* NAVBAR */}
+  <nav className="p-2 flex justify-between container mx-auto">
+    <a href="" className="font-bold text-gray-700 text-2xl"> Restaurant </a>
+    <div>
+      <div className="flex">
+        <button
+          className="bg-indigo-400 text-white px-2 py-1 text-base rounded hover:bg-indigo-500 transition-all duration-500"
+        >
+          Sign in
+        </button>
+        <button
+          className="text-gray-600 px-2 py-1 text-base rounded hover:text-gray-800 transition-all duration-500"
+        >
+          Sign up
+        </button>
+      </div>
+    </div>
+  </nav>
+  {/* NAVBAR */} {/* HEADER */}
+  <header
+    className="h-72 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] flex text-center flex-col justify-center items-center"
+  >
+    <h1 className="text-3xlg text-white font-bold mb-4">
+      Find your table for any occasion
+    </h1>
+    <div className="flex flex-row">
+      <input
+        className="text-left p-2 w-[350px] flex justify-center rounded mr-2"
+        type="text"
+        placeholder="City, State, ..."
+      />
+      <button
+        className="bg-red-600 text-white rounded px-4 py-1 text-lg font-semibold"
+      >
+        Search
+      </button>
+    </div>
+  </header>
+  {/* HEADER */} {/* CARDS */}
+  <div className="py-3 px-36 mt-10 flex flex-wrap">
+    <div
+      className="w-64 h-72 m-3 rounded overflow-hidden border cursor-pointer shadow-sm hover:shadow-lg transition-all duration-500"
+    >
+      <img src="./photo.jpg" alt="" className="w-full h-36" />
+      <div className="p-3">
+        <h3 className="font-semibold text-2xl mb-2">Animar</h3>
+        <div className="flex items-start">
+          <div className="">*****</div>
+          <p className="pl-4">75 reviews</p>
+        </div>
+        <div className="flex text-base font-light mr-3 capitalize">
+          <p className="mr-3">Mexican</p>
+          <p className="mr-3">$$$$</p>
+          <p>Toronto</p>
+        </div>
+        <p className="text-sm mt-1 font-bold">Booked 3 times today</p>
+      </div>
+    </div>
+  </div>
+  {/* CARDS */}
+</main>
 }
