@@ -1,0 +1,92 @@
+import React from "react";
+
+const Search = () => {
+  return (
+    <main className="bg-gray-200 min-h-screen w-full">
+      <nav className="p-2 flex justify-between container mx-auto">
+        <a href="" className="font-bold text-gray-700 text-2xl">
+          {" "}
+          Restaurant{" "}
+        </a>
+        <div>
+          <div className="flex">
+            <button className="bg-indigo-400 text-white px-2 py-1 text-base rounded hover:bg-indigo-500 transition-all duration-500">
+              Sign in
+            </button>
+            <button className="text-gray-600 px-2 py-1 text-base rounded hover:text-gray-800 transition-all duration-500">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </nav>
+      <header className="h-24 bg-gradient-to-r from-[#0f1f47] to-[#5f6984] flex text-center flex-col justify-center items-center">
+        <div className="flex flex-row">
+          <input
+            className="text-left p-2 w-[350px] flex justify-center rounded mr-2"
+            type="text"
+            placeholder="City, State, ..."
+          />
+          <button className="bg-red-600 text-white rounded px-4 py-1 text-lg font-semibold">
+            Search
+          </button>
+        </div>
+      </header>
+      <div className="flex w-2/3 m-auto justify-between items-start mt-5 bg-white shadow p-2">
+        <div className="w-1/5">
+          <div className="border-b pb-4">
+            <h3 className="mb-2">Region</h3>
+            <p className="font-light text-md">Toronto</p>
+            <p className="font-light text-md">Hamilton</p>
+            <p className="font-light text-md">Ottawa</p>
+            <p className="font-light text-md">Niagra</p>
+          </div>
+          <div className="border-b pb-4 mt-3">
+            <h3 className="mb-2">Cuisine</h3>
+            <p className="font-light text-md">Mexican</p>
+            <p className="font-light text-md">Italian</p>
+            <p className="font-light text-md">Chinese</p>
+            <p className="font-light text-md">Persian</p>
+          </div>
+          <div className="mt-3 pb-4">
+            <h3>Price</h3>
+            <div className="flex">
+              <button className="border w-full text-md font-light rounded-l p-2">
+                $
+              </button>
+              <button className="border-r border-t border-b w-full text-md font-light p-2">
+                $$
+              </button>
+              <button className="border-r border-t border-b w-full text-md font-light rounded-r p-2">
+                $$$
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="w-5/6">
+          <div className="border-b flex pb-5">
+            <img src="./img2.png" alt="test" className="rounded w-44" />
+            <div className="pl-5">
+              <h3 className="text-2xlg font-semibold">Restaurant Name</h3>
+              <div className="flex items-start">
+                <p>*****</p>
+                <p className="ml-2">Awesome</p>
+              </div>
+              <div className="mb-9">
+                <div className="font-light flex text-md gap-3">
+                  <p>$$$</p>
+                  <p>Mexican</p>
+                  <p>Ottawa</p>
+                </div>
+              </div>
+              <div className="text-red-600">
+                <a href="#">Read more information</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Search;
