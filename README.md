@@ -18,13 +18,18 @@ Install TAILWIND with npm
 ```bash
   npm install -D tailwindcss@3.2.4 postcss@8.4.20 autoprefixer@10.4.13
 ```
+Install PRISMA with npm
+
+```bash
+  npm install prisma@4.8.1
+```
     
 ## Packages
-
 - Next.js 13.1.1
 - TailwindCSS 3.2.4
-## Run Locally
+- Prisma@4.8.1
 
+## Run Locally
 Clone the project
 
 ```bash
