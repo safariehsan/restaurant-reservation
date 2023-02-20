@@ -8,7 +8,7 @@ import RestaurantLayout from "../layout";
 const Menu = () => {
   return (
     <RestaurantLayout>
-      <article className="justify-between items-start bg-white rounded p-3 shadow-lg">
+      <article className="justify-between items-start bg-white rounded p-3 shadow-lg w-full">
         <RestaurantNavBar />
         <SubTitle>Menu</SubTitle>
         <RestaurantMenu />
