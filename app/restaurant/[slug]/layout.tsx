@@ -5,7 +5,7 @@ const RestaurantLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Header />
-      <div className="flex mx-auto flex-row relative -mt-12 container gap-3 px-20">
+      <div className="flex mx-auto flex-row relative -mt-6 container gap-3 px-20">
         {children}
       </div>
     </>
